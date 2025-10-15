@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - blabla
@@ -8,6 +8,11 @@
  */
 int main(void)
 {
-	puts("_putchar")
-	return 0
+	char text[] = "_putchar";
+	int i;
+	for(i = 0; i < 8; i++)
+	{
+		_putchar(text[i]);
+	}
+	return 0;
 }
