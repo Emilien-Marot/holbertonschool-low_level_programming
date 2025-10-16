@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * mul - blabla
+ * func - blabla
  *
  * @a: abc
- * @b: def
  *
  * Description: blabla
  * Return: blabla
  */
-int mul(int a, int b)
+int func(int a)
 {
-	return (a * b);
+	return (0);
 }
