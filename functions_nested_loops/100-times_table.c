@@ -23,7 +23,7 @@ void print_times_table(int n)
 				if (p < 1000 && n2 > 0)
 					_putchar(' ');
 				if (p < 100 && n2 > 0)
-                        	        _putchar(' ');
+					_putchar(' ');
 				else if (n2 > 0)
 					_putchar('0' + p / 100);
 				if (p < 10 && n2 > 0)
