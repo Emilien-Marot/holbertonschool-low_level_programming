@@ -12,6 +12,7 @@ int main(void)
 {
 	int i;
 	int j;
+	int f = 1;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -19,10 +20,15 @@ int main(void)
 		{
 			if (j > i)
 			{
+				if (f != 1)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				else
+					f = 0;
 				putchar('0' + i);
 				putchar('0' + j);
-				putchar(',');
-				putchar(' ');
 			}
 		}
 	}
