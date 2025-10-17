@@ -8,14 +8,20 @@
  */
 int main(void)
 {
-	unsigned long int sum = 0;
-	int 
+	unsigned long int sum;
+	unsigned long int n1 = 1;
+	unsigned long int n2 = 2;
+	int i;
 
-	for (i = 1; i <= 1024; i++)
+	for (i = 0; i < 98; i++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum += i;
+		if (i != 0)
+			printf(", ");
+		printf("%lu", n1);
+		sum = n1 + n2;
+		n1 = n2;
+		n2 = sum;
 	}
-	printf("%d\n", sum);
+	printf("\n");
 	return (0);
 }
