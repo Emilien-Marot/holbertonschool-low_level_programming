@@ -22,7 +22,7 @@ int main(void)
 		if (i != 0)
 			printf(", ");
 		if (n10 > 0)
-			printf("%lu%lu", n10, n1);
+			printf("%lu%016lu", n10, n1);
 		else
 			printf("%lu", n1);
 		sum10 = n10 + n20 + ((n1 + n2) / max);
