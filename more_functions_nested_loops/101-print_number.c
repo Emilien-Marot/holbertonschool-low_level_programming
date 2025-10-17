@@ -10,15 +10,20 @@
  */
 void print_number(int n)
 {
+	unsigned int n2;
 	int n_test;
 	int div = 1;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -1 * n;
+		n2 = -1 * n;
 	}
-	n_test = n;
+	else
+	{
+		n2 = n;
+	}
+	n_test = n2;
 	while (n_test >= 10)
 	{
 		div = div * 10;
@@ -26,7 +31,7 @@ void print_number(int n)
 	}
 	while (div >= 1)
 	{
-		_putchar('0' + ((n / div) % 10));
+		_putchar('0' + ((n2 / div) % 10));
 		div = div / 10;
 	}
 }
