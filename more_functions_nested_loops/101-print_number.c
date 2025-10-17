@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_number - blabla
  *
@@ -11,7 +11,7 @@
 void print_number(int n)
 {
 	unsigned int n2;
-	int n_test;
+	unsigned int n_test;
 	int div = 1;
 
 	if (n < 0)
