@@ -12,7 +12,7 @@ int main(void)
 	long int max_f;
 	long int i;
 
-	for(i = 2; i <= f; i++)
+	for (i = 2; i <= f; i++)
 	{
 		while (f % i == 0)
 		{
