@@ -26,7 +26,7 @@ void puts_half(char *str)
 		l_max = (len + 1) / 2;
 	for (l = len - l_max; l < len; l++)
 	{
-		_putchar(*(str + l));
+		_putchar(*(str + l - 1));
 	}
 	_putchar('\n');
 }
