@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_rev- blabla
@@ -16,6 +17,7 @@ void print_rev(char *s)
 	{
 		len++;
 	}
+	len--;
 
 	for (; len >= 0; len--)
 	{
