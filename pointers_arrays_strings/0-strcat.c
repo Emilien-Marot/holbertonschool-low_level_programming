@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strcat - blabla
  *
@@ -22,7 +22,6 @@ char *_strcat(char *dest, char *src)
 		if (*(src + len_s) != '\0')
 			len_s++;
 	}
-	printf("%d-%d\n", len_d, len_s);
 	for (i = 0; i <= len_s; i++)
 	{
 		*(dest + len_d + i) = *(src + i);
