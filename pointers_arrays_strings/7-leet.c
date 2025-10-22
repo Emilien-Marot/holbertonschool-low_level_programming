@@ -3,7 +3,7 @@
 /**
  * leet - blabla
  *
- * @ abcd
+ * @c: abcd
  *
  * leet: blabla
  * Return: blabla
