@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _strncpy - blabla
  *
@@ -12,20 +12,14 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int len_s = 0;
-	int i;
+	int i = 0;
 
-	while (*(src + len_s) != '\0')
-	{
-		if (*(src + len_s) != '\0')
-			len_s++;
-	}
-	for (i = 0; i <= len_s && i < n ; i++)
+	while (*(src + i) != '\0' && i < n)
 	{
 		*(dest + i) = *(src + i);
+		i++;
 	}
-	if (len_s > n)
-		*(dest + n + 1) = '\0';
-
+	if (i == n && *(src + i - 1) != '\0')
+		*(src + i) = '\0';
 	return (dest);
 }
