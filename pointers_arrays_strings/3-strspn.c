@@ -3,7 +3,8 @@
 /**
  * _strspn - blabla
  *
- * @c: abc
+ * @s: abc
+ * @accept: def
  *
  * Description: blabla
  * Return: blabla
@@ -15,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 	int ct = 0;
 	int pf = 1;
 
-	for (i = 0; s[i] != '\0' && pf;i++)
+	for (i = 0; s[i] != '\0' && pf; i++)
 	{
 		pf = 0;
 		for (j = 0; accept[j] != '\0'; j++)
