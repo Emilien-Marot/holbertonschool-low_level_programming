@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isupper - blabla
+ *  - blabla
  *
  * @c: abcd
  *
  * Description: blabla
  * Return: blabla
  */
-int _isupper(int c)
+
 {
-		return (0);
+	return (0);
 }
