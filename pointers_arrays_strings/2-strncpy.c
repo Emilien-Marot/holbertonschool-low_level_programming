@@ -19,12 +19,10 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		if (s && src[i] != '\0')
 		{
-			printf("o");
 			dest[i] = src[i];
 		}
 		else
 		{
-			printf("x");
 			s = 0;
 			dest[i] = '\0';
 		}
