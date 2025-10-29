@@ -18,6 +18,8 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 	table = malloc(size * sizeof(char));
+	if (table == NULL)
+		return (NULL);
 	for (i = 0; i < size; i++)
 	{
 		table[i] = c;
