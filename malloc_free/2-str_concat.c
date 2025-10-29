@@ -40,6 +40,8 @@ char *str_concat(char *s1, char *s2)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	res_str = malloc((len1 + len2 + 1) * sizeof(char));
+	if (res_str == NULL)
+		return (NULL);
 	for (i = 0; i < len1; i++)
 	{
 		res_str[i] = s1[i];
