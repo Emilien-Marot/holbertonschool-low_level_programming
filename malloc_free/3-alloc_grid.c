@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - blabla
+ * alloc_grid - blabla
  *
  * @width: abc
  * @height: def
@@ -29,9 +29,9 @@ int **alloc_grid(int width, int height)
 		{
 			for (j = 0; j < i; j++)
 			{
-				free (array[j]);
+				free(array[j]);
 			}
-			free (array);
+			free(array);
 			return (NULL);
 		}
 		array[i] = temp;
@@ -43,5 +43,5 @@ int **alloc_grid(int width, int height)
 			array[i][j] = 0;
 		}
 	}
-	return array;
+	return (array);
 }
