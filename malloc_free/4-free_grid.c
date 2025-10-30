@@ -4,7 +4,7 @@
 /**
  * free_grid - blabla
  *
- * @width: abc
+ * @grid: abc
  * @height: def
  *
  * Description: blabla
