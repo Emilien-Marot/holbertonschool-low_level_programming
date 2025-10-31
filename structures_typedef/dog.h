@@ -2,7 +2,7 @@
 #define MYHEADER_H
 
 /**
- * struct my_struct - Short description
+ * struct dog - let's play
  * @name: 1
  * @age: 2
  * @owner: 3
