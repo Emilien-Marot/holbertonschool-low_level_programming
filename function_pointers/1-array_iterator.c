@@ -3,7 +3,7 @@
 /**
  * array_iterator - blabla
  *
- * @name: abc
+ * @array: abc
  * @size: def
  * @action: ghi
  *
