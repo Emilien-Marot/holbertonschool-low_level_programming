@@ -15,14 +15,14 @@ int main(int argc, char *argv[])
 	int num1, num2;
 	int (*pt_op)(int, int);
 
-	if (argc != 3)
+	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	pt_op = get_op_func(argv[2]);
-	printf ("%d\n", pt_op(num1, num2));
+	printf("%d\n", pt_op(num1, num2));
 	return (0);
 }
