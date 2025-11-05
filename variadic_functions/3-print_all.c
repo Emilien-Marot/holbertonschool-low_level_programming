@@ -72,6 +72,7 @@ void print_c(va_list ap)
 void print_all(const char * const format, ...)
 {
 	va_list ap;
+	char *sep = "";
 	int i = 0, j = 0;
 	t_f list_type[] = {
 		{'s', print_s},
@@ -85,14 +86,18 @@ void print_all(const char * const format, ...)
 	while (format[i] != '\0')
 	{
 		j = 0;
-		while (list_type[j].t != '\0' && list_type[j].t != format[i])
+		while (list_type[j].t != '\0')
 		{
+			if (list_type[j].t == format[i])
+			{
+				printf("%s", sep);
+				list_type[j].f(ap);
+				sep = ", ";
+			}
+
 			j++;
 		}
-		if (i != 0 && j != 4)
-			printf(", ");
-		if (j != 4)
-			list_type[j].f(ap);
+
 		i++;
 	}
 	printf("\n");
