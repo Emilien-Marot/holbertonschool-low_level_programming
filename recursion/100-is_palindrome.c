@@ -2,6 +2,25 @@
 #include <stdio.h>
 
 /**
+ * char_check - blabla
+ *
+ * @s: abc
+ * @len: def
+ * @i: ghi
+ *
+ * Description: blabla
+ * Return: blabla
+ */
+int char_check(char *s, int len, int i)
+{
+	if (i > len - i)
+		return (1);
+	if (s[i] != s[len - i])
+		return (0);
+	return (char_check(s, len, i + 1));
+}
+
+/**
  * is_palindrome - blabla
  *
  * @s: abc
@@ -15,10 +34,5 @@ int is_palindrome(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 		len = i;
-	for (i = 0; i < len - i; i++)
-	{
-		if (s[i] != s[len - i])
-			return (0);
-	}
-	return (1);
+	return (char_check(s, len, 0));
 }
