@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * char_check - blabla
+ * strlen_r - blabla
  *
  * @s: abc
- * @len: def
  * @i: ghi
  *
  * Description: blabla
