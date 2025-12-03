@@ -3,9 +3,16 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+ * print_list - blabla
+ *
+ * @h: abd
+ *
+ * Return: xyz
+**/
 size_t print_list(const list_t *h)
 {
-	int size = 0;
+	int size = 1;
 	list_t *current = h->next;
 
 	if (h->str == NULL)
