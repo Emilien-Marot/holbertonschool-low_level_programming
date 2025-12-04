@@ -4,13 +4,13 @@
 #include "lists.h"
 
 /**
- * print_dlistint - blabla
+ * dlistint_len - blabla
  *
  * @h: abd
  *
  * Return: xyz
 **/
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int size;
 	dlistint_t *current;
