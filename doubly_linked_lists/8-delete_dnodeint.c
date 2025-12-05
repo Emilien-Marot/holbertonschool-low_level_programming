@@ -6,7 +6,7 @@
 /**
  * delete_dnodeint_at_index - blabla
  *
- * @h: abc
+ * @head: abc
  * @index: def
  *
  * Return: xyz
@@ -28,7 +28,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	prev = current->prev;
 	next = current->next;
-	free (current);
+	free(current);
 	if (index == 0)
 		*head = next;
 	if (next != NULL)
