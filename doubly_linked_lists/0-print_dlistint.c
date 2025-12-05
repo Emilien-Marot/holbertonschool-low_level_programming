@@ -19,11 +19,11 @@ size_t print_dlistint(const dlistint_t *h)
 		return (0);
 	current = h->next;
 	size = 1;
-	printf("%p->%p->%p :%d\n", (void *)h->prev, (void *)h, (void *)h->next, h->n);
+	printf("%d\n", h->n);
 	while (current != NULL)
 	{
 		size++;
-		printf("%p->%p->%p : %d\n", (void *)current->prev, (void *)current, (void *)current->next, current->n);
+		printf("%d\n", current->n);
 		current = current->next;
 	}
 	return (size);
