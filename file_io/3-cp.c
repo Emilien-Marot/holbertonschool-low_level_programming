@@ -82,5 +82,5 @@ int main(int argc, char *argv[])
 		err_display(100, file_to);
 	if (close(file_from) == -1)
 		err_display(100, file_from);
-	return (1);
+	return (0);
 }
