@@ -5,16 +5,17 @@
 #define MAXBUFLEN 1024
 
 /**
- * err_read - blabla
+ * err_display - blabla
  *
- * @text: abc
+ * @error: abc
  * @...: def
  *
  * Return: xyz
 **/
-void err_display(int error,...)
+void err_display(int error, ...)
 {
 	va_list args;
+	char *str;
 
 	va_start(args, error);
 	switch (error)
@@ -23,10 +24,12 @@ void err_display(int error,...)
 			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 			break;
 		case 98:
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", va_arg(args, char *));
+			str = "Error: Can't read from file";
+			dprintf(STDERR_FILENO, "%s %s\n", str, va_arg(args, char *));
 			break;
 		case 99:
-			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", va_arg(args, char *));
+			str = "Error: Can't write to file";
+			dprintf(STDERR_FILENO, "%s %s\n", str, va_arg(args, char *));
 			break;
 		case 100:
 			dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", va_arg(args, int));
