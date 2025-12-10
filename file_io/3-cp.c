@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "main.h"
-#define MAXBUFLEN 10
+#define MAXBUFLEN 1024
 
 /**
  * err_display - blabla
