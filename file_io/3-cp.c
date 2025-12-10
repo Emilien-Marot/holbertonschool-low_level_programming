@@ -65,7 +65,14 @@ int main(int argc, char *argv[])
 		size = read(file_from, buf, sizeof(buf));
 		if (size == -1)
 			err_display(98, argv[1]);
-
+		if (size == 0)
+			buf[0] = '\0';
+		if (dprintf(file_to, "%s", buf) == -1)
+		{
+			close(file_from);
+			close(file_to);
+			err_display(99, argv[2]);
+		}
 	} while (size == MAXBUFLEN);
 	if (close(file_to) == -1)
 		err_display(100, file_to);
