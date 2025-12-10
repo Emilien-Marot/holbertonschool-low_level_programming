@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 			err_display(98, argv[1]);
 		if (size == 0)
 			buf[0] = '\0';
-		if (dprintf(file_to, "%s", buf) == -1)
+		if (write(file_to, buf, size) == -1)
 		{
 			close(file_from);
 			close(file_to);
