@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "main.h"
-#define MAXBUFLEN 1024
+#define MAXBUFLEN 10
 
 /**
  * err_display - blabla
@@ -70,13 +70,14 @@ int main(int argc, char *argv[])
 			err_display(98, argv[1]);
 		if (size == 0)
 			buf[0] = '\0';
+		printf("%ld", size);
 		if (write(file_to, buf, size) == -1)
 		{
 			close(file_from);
 			close(file_to);
 			err_display(99, argv[2]);
 		}
-	} while (size == MAXBUFLEN);
+	} while (size == MAXBUFLEN + 1);
 	if (close(file_to) == -1)
 		err_display(100, file_to);
 	if (close(file_from) == -1)
