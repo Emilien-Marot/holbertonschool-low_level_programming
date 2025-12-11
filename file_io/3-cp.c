@@ -28,7 +28,7 @@ void err_display(int error, ...)
 			dprintf(STDERR_FILENO, "%s %s\n", str, va_arg(args, char *));
 			break;
 		case 99:
-			str = "Error: Can't write to file";
+			str = "Error: Can't write to";
 			dprintf(STDERR_FILENO, "%s %s\n", str, va_arg(args, char *));
 			break;
 		case 100:
