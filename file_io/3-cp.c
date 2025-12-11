@@ -70,7 +70,6 @@ int main(int argc, char *argv[])
 			err_display(98, argv[1]);
 		if (size == 0)
 			buf[0] = '\0';
-		printf("%ld", size);
 		if (write(file_to, buf, size) == -1)
 		{
 			close(file_from);
