@@ -22,6 +22,7 @@ int main(void)
 	ht = hash_table_create(1024);
 	hash_table_set(ht, key1, val1);
 	hash_table_set(ht, key2, val2);
+	hash_table_set(ht, key1, val2);
 	array_node = ht->array;
 	for (i = 0; i < 1024; i++)
 	{
